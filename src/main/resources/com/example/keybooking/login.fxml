@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.keybooking.Login">
+    <children>
+        <Pane layoutY="182.0" prefHeight="318.0" prefWidth="700.0" style="-fx-background-color: #003049;">
+            <children>
+                <Label layoutX="121.0" layoutY="72.0" text="Username" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="119.0" layoutY="154.0" text="Password" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="usernameInput" layoutX="119.0" layoutY="102.0" prefHeight="25.0" prefWidth="463.0" promptText="Enter username">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="passwordInput" layoutX="119.0" layoutY="182.0" prefHeight="25.0" prefWidth="463.0" promptText="Enter passeod">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="loginBtn" layoutX="425.0" layoutY="242.0" mnemonicParsing="false" onAction="#OnLoginClick" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: #f35b04;" text="LOGIN" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Label layoutX="313.0" layoutY="25.0" text="LOGIN" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Label layoutX="284.0" layoutY="101.0" text="WELCOME TO KTU">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="243.0" layoutY="125.0" text="KEYs BOOKING" textFill="#003049">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="ktuLogoImg" fitHeight="67.0" fitWidth="73.0" layoutX="292.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../images/ktu_logo.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="keyLogoImg" fitHeight="45.0" fitWidth="49.0" layoutX="367.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../images/keys.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
