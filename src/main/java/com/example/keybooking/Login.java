@@ -71,7 +71,7 @@ public class Login implements Initializable {
         try {
             URL resourceUrl = getClass().getResource(fxmlFileName);
             if (resourceUrl == null) {
-                System.err.println("FXML file not found: " + fxmlFileName);
+                System.err.println("FXML file not found =>: " + fxmlFileName);
                 return; // Exit the method if FXML file is not found
             }
 
